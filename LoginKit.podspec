@@ -26,9 +26,9 @@ s.platform     = :ios, "10.0"
 s.source       = { :git => "https://github.com/KeithGapusan/LoginKit", :tag => "#{s.version}" }
 
 
-s.source_files  = "LoginKit/**/*.{h,m,swift,storyboard,xib.json}"
+s.source_files  = "Classes/**/*.{h,m,swift,storyboard,xib.json}"
 s.resource_bundles = {
-'LoginKit' => ['LoginKit/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+'LoginKit' => ['Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
 }
 
 
