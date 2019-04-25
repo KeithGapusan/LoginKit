@@ -10,6 +10,11 @@
 		16C32DC2227191C30099A60D /* LoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C32DB8227191C30099A60D /* LoginKit.framework */; };
 		16C32DC7227191C30099A60D /* LoginKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C32DC6227191C30099A60D /* LoginKitTests.swift */; };
 		16C32DC9227191C40099A60D /* LoginKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C32DBB227191C30099A60D /* LoginKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16C32DD4227193440099A60D /* LoginViewV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C32DD3227193440099A60D /* LoginViewV1.swift */; };
+		16C32DD7227194080099A60D /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C32DD6227194080099A60D /* ViewExt.swift */; };
+		16C32DDA227194940099A60D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C32DD9227194940099A60D /* BaseView.swift */; };
+		16C32DDC227196480099A60D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C32DDB227196480099A60D /* Protocols.swift */; };
+		16C32DDE22719FCA0099A60D /* LoginKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 16C32DDD22719FCA0099A60D /* LoginKit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		16C32DC1227191C30099A60D /* LoginKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C32DC6227191C30099A60D /* LoginKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKitTests.swift; sourceTree = "<group>"; };
 		16C32DC8227191C40099A60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C32DD3227193440099A60D /* LoginViewV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewV1.swift; sourceTree = "<group>"; };
+		16C32DD6227194080099A60D /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		16C32DD9227194940099A60D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		16C32DDB227196480099A60D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		16C32DDD22719FCA0099A60D /* LoginKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LoginKit.podspec; path = ../LoginKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,9 @@
 		16C32DAE227191C30099A60D = {
 			isa = PBXGroup;
 			children = (
+				16C32DDD22719FCA0099A60D /* LoginKit.podspec */,
+				16C32DD52271936C0099A60D /* Helper */,
+				16C32DD22271923B0099A60D /* Version1 */,
 				16C32DBA227191C30099A60D /* LoginKit */,
 				16C32DC5227191C30099A60D /* LoginKitTests */,
 				16C32DB9227191C30099A60D /* Products */,
@@ -84,6 +97,32 @@
 				16C32DC8227191C40099A60D /* Info.plist */,
 			);
 			path = LoginKitTests;
+			sourceTree = "<group>";
+		};
+		16C32DD22271923B0099A60D /* Version1 */ = {
+			isa = PBXGroup;
+			children = (
+				16C32DD3227193440099A60D /* LoginViewV1.swift */,
+				16C32DDB227196480099A60D /* Protocols.swift */,
+			);
+			path = Version1;
+			sourceTree = "<group>";
+		};
+		16C32DD52271936C0099A60D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				16C32DD8227194750099A60D /* BaseView */,
+				16C32DD6227194080099A60D /* ViewExt.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		16C32DD8227194750099A60D /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				16C32DD9227194940099A60D /* BaseView.swift */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +187,7 @@
 				TargetAttributes = {
 					16C32DB7227191C30099A60D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					16C32DC0227191C30099A60D = {
 						CreatedOnToolsVersion = 10.1;
@@ -177,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C32DDE22719FCA0099A60D /* LoginKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C32DDA227194940099A60D /* BaseView.swift in Sources */,
+				16C32DD7227194080099A60D /* ViewExt.swift in Sources */,
+				16C32DD4227193440099A60D /* LoginViewV1.swift in Sources */,
+				16C32DDC227196480099A60D /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +386,7 @@
 		16C32DCD227191C40099A60D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krsgapusan.LoginKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +412,7 @@
 		16C32DCE227191C40099A60D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +437,7 @@
 		16C32DD0227191C40099A60D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +455,7 @@
 		16C32DD1227191C40099A60D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
